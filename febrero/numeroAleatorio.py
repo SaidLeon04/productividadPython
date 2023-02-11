@@ -110,7 +110,7 @@ if op == 3:
                 elif numero < intento3:
                     print ("Intentos terminados, el número era ", numero)
 
-if op == 18:
+if op == 1805:
     numero = random.randint(1,10)
     print (numero)
     intento1 = int(input("Intento 1: \n"))
