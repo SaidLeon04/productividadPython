@@ -50,7 +50,6 @@ if op == 1:
 if op == 2:
     print ("1. Piedra\n2. Papel\n3. Tijeras\nJugador 1 listo!\n") 
     opU1 = int(getpass.getpass(""))
-    print (opU1)
     print ("Jugador 2, listo!")
     opU2 = int(getpass.getpass(""))
     if opU1 == 1:
@@ -65,3 +64,23 @@ if op == 2:
         print("Usuario 2 escogió papel")
     if opU2 == 3:
         print("Usuario 2 escogió tijeras")
+        
+    if opU1 == 1 and opU2 == 1:
+        print("Empate")
+    if opU1 == 1 and opU2 == 2:
+        print("Gana Jugador 2")
+    if opU1 == 1 and opU2 == 3:
+        print("Gana Jugador 1")
+    if opU1 == 2 and opU1 == 1:
+        print("Gana Jugador 1")
+    if opU1 == 2 and opU2 == 2:
+        print("Empate")
+    if opU1 == 2 and opU2 == 3:
+        print("Gana Jugador 2")
+    if opU1 == 3 and opU2 == 1:
+        print("Gana Jugador 2")
+    if opU1 == 3 and opU2 == 2:
+        print("Gana Jugador 1")
+    if opU1 == 3 and opU2 == 3:
+        print("Empate")
+      
