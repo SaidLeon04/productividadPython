@@ -4,6 +4,8 @@ Crea un libro de excel con dos hojas, añade texto a diferentes celdas en ambas 
 
 def crear_libro(path):
 	ide = input("Escribe el ID: ")
+	nombre = input("Escribe el nombre: ")
+	unidad = input("Escribe la unidad ")
 	workbook = Workbook() # crea un objeto de la clase woorkbook
 	sheet = workbook.active # crea la primera hoja
 	sheet.title = "productos" " # cambia el nombre de la hoja
@@ -11,6 +13,8 @@ def crear_libro(path):
 
 # añade texto a diferentes celdas referenciadas
 	sheet["A1"] = ide
+	sheet["B1"] = nombre
+	sheet["C1"] = unidad
 	workbook.save(path) 3 guarda los cambios en el libro
 	print (workbook.sheetnames) # imprime el nombre de las hojas ya creadas, solo para comprobar
 
